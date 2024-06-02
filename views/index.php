@@ -1,6 +1,6 @@
 <?php include 'includes/app.php'; ?>
 <?php controllers('LinkController'); ?>
-<main class=" h-screen w-full">
+<main class="h-screen relative -top-10 bg-gray-200  w-full ">
 
     <div class="w-full h-4/5  flex flex-col justify-center items-center">
         <form action="" method="post" class="w-full mb-10 flex flex-col justify-center items-center gap-10">
@@ -10,12 +10,21 @@
                 </h1>
             </div>
             <div class="w-full flex justify-center flex-col items-center">
-                <input type="text" name="targetednumber" value="<?= @showValue('targetednumber') ?>" class=" rounded-lg px-5 py-3 w-10/12 sm:w-4/12 border-2 border-x-sky-500	border-y-teal-400 focus:outline-none" placeholder="Enter Whatsapp Numer">
+                <label for="" class=" rounded-lg  w-10/12 sm:w-4/12 border-2 bg-gradient-to-tr from-sky-500 to-teal-400 p-[1.5px] flex items-center">
+                    <i class="fa fa-phone bg-white rounded-l-md text-xl pl-4 py-3 h-full border-r-2 border-teal-400 pr-2 text-gray-500"></i>
+
+                    <input type="text" name="targetednumber" value="<?= @showValue('targetednumber') ?>" class="rounded-r-md px-2 py-3 focus:outline-none w-full h-full" placeholder="Enter Whatsapp Numer">
+                </label>
                 <small class="text-red-600 font-medium w-10/12 sm:w-4/12"><?= getError('targetednumber') ?></small>
             </div>
 
             <div class="w-full flex justify-center flex-col items-center">
-                <input type="text" name="targetedmessage" value="<?= @showValue('targetedmessage') ?>" class=" rounded-lg px-5 py-3 w-10/12 sm:w-4/12 border-2 border-x-sky-500	border-y-teal-400 focus:outline-none" placeholder="Optional message">
+                <label for="" class=" rounded-lg  w-10/12 sm:w-4/12 border-2 bg-gradient-to-tr from-sky-500 to-teal-400 p-[1.5px] flex items-center">
+                    <i class="fa fa-message bg-white rounded-l-md text-xl pl-4 py-3 h-full border-r-2 border-teal-400 pr-2 text-gray-500"></i>
+
+                    <input type="text" name="targetedmessage" value="<?= @showValue('targetedmessage') ?>" class="rounded-r-md px-2 py-3 focus:outline-none w-full h-full" placeholder="Optional message">
+                </label>
+
                 <small class="text-red-600 font-medium w-10/12 sm:w-4/12"><?= getError('targetedmessage') ?></small>
             </div>
             <div class="">

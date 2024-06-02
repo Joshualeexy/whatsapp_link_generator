@@ -7,8 +7,12 @@ $routes = [
     '/' =>   [
         'path'    => views('index'),
         'title'     => 'Home',
-        'middleware'    => 'noauth'
-
+        'middleware'    => 'noauth',
+    ],
+    '/pro' =>   [
+        'path'    => views('pro'),
+        'title'     => 'Get Pro',
+        'middleware'    => 'noauth',
     ]
 ];
 
