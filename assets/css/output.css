@@ -1064,12 +1064,24 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[10px\] {
+  font-size: 10px;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
+}
+
 .font-medium {
   font-weight: 500;
 }
 
 .font-extrabold {
   font-weight: 800;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 .leading-8 {
